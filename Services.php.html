@@ -1,158 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta name="google-site-verification" content="ewq52a3m-PbcVRujSMqKIuhY3ZAYz6B2DKzIR4KymFY" />
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TINNA</title>
-    
-    <style>
-        /* Inline CSS for styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        h1, h3 {
-            margin: 0;
-            text-align: center;
-        }
-        /* Updated nav styling */
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex; /* Flexbox layout */
-            justify-content: center; /* Center items horizontally */
-            flex-wrap: nowrap; /* Prevent wrapping */
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 12px;
-            display: block;
-            text-align: center;
-        }
-        nav ul li a:hover {
-            color: #ddd;
-        }
-        .hero {
-            background: #007BFF;
-            color: #fff;
-            padding: 60px 0;
-            text-align: center;
-        }
-        .btn-primary {
-            background: #fff;
-            color: #007BFF;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .services { 
-            padding: 60px 0;
-            text-align: center;
-        }
-        .service-item {
-            margin: 20px 0;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .gallery-container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            position: relative;
-        }
-        .gallery-slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        .gallery-slide {
-            min-width: 100%;
-            box-sizing: border-box;
-            position: relative;
-        }
-        .gallery-slide img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .prev, .next {
-            position: absolute;
-            top: 50%;
-            width: 50px;
-            height: 50px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 18px;
-            transform: translateY(-50%);
-            z-index: 1000;
-        }
-        .prev {
-            left: 10px;
-        }
-        .next {
-            right: 10px;
-        }
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-    </style>
+  <meta name="google-site-verification" content="ewq52a3m-PbcVRujSMqKIuhY3ZAYz6B2DKzIR4KymFY" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TINNA MEDICAL CENTRE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #455;
+      color: #fff;
+    }
+    h1, h2, h3, p, a, address {
+      color: #fff;
+    }
+    header {
+      background: #949;
+      color: #fff;
+      padding: 20px 0;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    h1, h3 {
+      margin: 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 12px;
+      display: block;
+      text-align: center;
+    }
+    nav ul li a:hover {
+      color: #ddd;
+    }
+    .hero {
+      background: #254;
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+    .btn-primary {
+      background: #fff;
+      color: #007BFF;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .services {
+      padding: 60px 0;
+      text-align: center;
+    }
+    .service-item {
+      margin: 20px 0;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .gallery-container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery-slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .gallery-slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .gallery-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .about, .contact, .services {
+      background-color: #444;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin: 20px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>TINNA</h1>
-            <h3>MEDICAL CENTRE</h3>
-            <nav>
-                <ul>
-                    <li><a href="Home.php.html">🏠 Home</a></li>
-                    <li><a href="Services.php.html">🛠️ Services</a></li>
-                    <li><a href="About.php.html">ℹ️ About Us</a></li>
-                    <li><a href="Contact.php.html">📞 Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <h1>TINNA</h1>
+      <h3>MEDICAL CENTER</h3>
+      <nav>
+        <ul>
+          <li><a href="Home.php.html">🏠 Home</a></li>
+          <li><a href="Services.php.html">🛠️ Services</a></li>
+          <li><a href="About.php.html">ℹ️ About Us</a></li>
+          <li><a href="Contact.php.html">📞 Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="home" class="hero">
+    <div class="container">
 
-    <section id=" Services " class="hero">
-        <div class="container">
-            <h2>Welcome to Tinna Medical Centre</h2>
-            <p>Providing quality healthcare services with compassion and excellence.</p>
-            <a href="Contact.php" class="btn-primary">Contact Us</a>
-        </div>
+
+
+
+      <p>Providing quality healthcare services with compassion and excellence.</p>
+
+      <center><hr style="border: 4px solid grey; width: 80%; margin: 20px 0;"></center>
+
+
+      <p>Service With Integrity For All.</p>
+    </div>
+  </section>
+
+
+
+
+<center>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Ambulance Services (HPCZ Licensed) </h2>
+                    <center><img src="AMBULANCE (2).jpg" border="1" style="border-radius: 5px;border-color:black;" height='200'width='250px'><center>
+
+
+    <center><hr style="border: 4px solid grey; width: 80%; margin: 20px 0;"></center>
+
+<h3> Services Offered</h3>
+<br>
+
+          <center><img src="AMBULANCE.jpg" border="1" style="border-radius: 5px;border-color:black;" height='200'width='250px'><center>
+
+  
+<br>
+      
+        <p>Rapid Response To Emergency situation 24/7.</p>
+      
+        <p>Trained And Certified Paramedics And EMTS.</p>
+        
+        
+      </div>
+    </section>
+    
+
+
+
+
+
+
+<center>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Children Clinic </h2>
+                <p>At tinna medical centre we care for your little ones.</p>
+                    <center><img src="priest.jpg" border="1" style="border-radius: 5px;border-color:black;" height='200'width='250px'><center>
+  <p>Well child check-ups and vaccinations.</p>
+
+    <center><hr style="border: 4px solid grey; width: 80%; margin: 20px 0;"></center>
+
+<h3> Specialized clinics</h3>
+<br>
+ <p>Developmental Assessement And Screening.</p>
+
+          <center><img src="priest 1.jpg" border="1" style="border-radius: 5px;border-color:black;" height='200'width='250px'><center>
+
+  
+<br>
+      
+        <p>Children's Ward.</p>
+      
+          <center><img src="child 1.jpg" border="1" style="border-radius: 5px;border-color:black;" height='200'width='250px'><center>
+
+      
+ 
+<br>
+      
+      
+                  <center><img src="child 2.jpg" border="1" style="border-radius: 5px;border-color:black;" height='200'width='250px'><center>
+
+        
+        
+      </div>
+    </section>
+    
+
+
+  <center>
+    <section id="about" class="about">
+      <div class="container">
+<h1 style="color: pink;">Home Nursing</h1>
+<p>At Tinna Medical Centre (TMC), we bring quality medical care right to your doorstep!</p>
+<p><span style="color: black;">Compassionate care in the Comfort of your Home</span></p>
+
+
+          <center><img src="home1.jpg" border="1" style="border-radius: 5px;border-color:black;" height='300'width='250px'><center>
+<ul>
+  <li>Personalized nursing care in the comfort of your own home</li>
+  <li>Experienced and certified nurses</li>
+  <li>Support with daily living activities, medication management and wound care</li>
+</ul>
+
+
+    <center><hr style="border: 4px solid grey; width: 80%; margin: 20px 0;"></center>
+
+<h2 style="color: pink;">Services Offered</h2>
+<ul>
+  <li>Doctor's visits</li>
+  <li>Skilled nursing care</li>
+  <li>Post-operative care</li>
+  <li>Chronic disease management</li>
+</ul>
+
+
+    <center><hr style="border: 4px solid grey; width: 80%; margin: 20px 0;"></center>
+    
+<h2 style="color: pink;">Benefits of Home Care</h2>
+<ul>
+  <li>Recover faster and more comfortably at home</li>
+  <li>Maintain independence and dignity</li>
+  <li>Receive personalized attention and care</li>
+  <li>Reduce risk of hospital-acquired infections</li>
+</ul>
+
+        
+  <center><img src="home2.jpg" border="1" style="border-radius: 5px;border-color:black;" height='300'width='250px'><center></center>     
+        
+        
+      </div>
+    </section>
+  </center>
+
+
+
+
+
+
+<center>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Surgical Theater</h2>
+
+ <center><hr style="border: 4px solid grey; width: 80%; margin: 20px 0;"></center>
+
+         <h4>State of Art surgical facilities</h4>
+
+
+
+        
+
+<li>Advanced medical technology and equipment</li>
+<center><hr style="border: 1px solid grey; width: 10%; margin: 20px 0;"></center>
+<center><img src="theater.jpg" border="1" style="border-radius: 5px;border-color:black;" height='300'width='350px'><center></center>  
+        <p>Experienced and skilled surgeons and stuff</p>
+
+        <p>personalized care and attention</p>
+<center><hr style="border: 1px solid grey; width: 10%; margin: 20px 0;"></center>
+<center><img src="theater1.jpg" border="1" style="border-radius: 5px;border-color:black;" height='300'width='350px'><center></center> 
+
+      </div>
     </section>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Services We Offer</h2>
-            <div class="service-item">
-                <h3>General curative </h3>
+
+<center>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Laboratory</h2>
+
+ <center><hr style="border: 4px solid grey; width: 80%; margin: 20px 0;"></center>
+
+         <h4>TMC is committed to high standards of confidentiality providing efficient quality accurate diagnostics services.</h4>
+
+
+<center><hr style="border: 1px solid grey; width: 10%; margin: 20px 0;"></center>
+<center><img src="lab 2.jpg" border="1" style="border-radius: 5px;border-color:black;" height='300'width='350px'><center></center>  
+        
+
+  
+<center><hr style="border: 1px solid grey; width: 10%; margin: 20px 0;"></center>
+<center><img src="lab 1.jpg" border="1" style="border-radius: 5px;border-color:black;" height='300'width='350px'><center></center> 
+
+      </div>
+    </section>
+
+
+
+<center>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Orthopedics Clinic</h2>
+
+ <center><hr style="border: 4px solid grey; width: 80%; margin: 20px 0;"></center>
+
+         <h4>TMC is committed to high standards of confidentiality providing efficient quality accurate diagnostics services.</h4>
+
+
+<center><hr style="border: 1px solid grey; width: 10%; margin: 20px 0;"></center>
+<center><img src="orth.jpg" border="1" style="border-radius: 5px;border-color:black;" height='400'width='350px'><center></center>  
+        
+<p>Focuses on the management of the bone fractures ,dislocations,sprains,arthritis,neck back pain and many more.</p>
+  
+<center><hr style="border: 1px solid grey; width: 10%; margin: 20px 0;"></center>
+  </div>
+    </section>
+
+
+
+
+<center>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Patient Waiting Area</h2>
+
+ <center><hr style="border: 4px solid grey; width: 80%; margin: 20px 0;"></center>
+
+         <li>Experience Compassionate care in our warm and welcoming patient waiting area.</li>
+
+<br>
+
+        
+
+<li>TMC where you comfort and well being come first</li>
+<center><hr style="border: 1px solid grey; width: 10%; margin: 20px 0;"></center>
+<center><img src="waiting.jpg" border="1" style="border-radius: 5px;border-color:black;" height='300'width='350px'><center></center>  
+        <p>A haven of comfort and care.</p>
+
+        <p>Where Compassionate meets comfort</p>
+<center><hr style="border: 1px solid grey; width: 10%; margin: 20px 0;"></center>
+<center><img src="waiting 1.jpg" border="1" style="border-radius: 5px;border-color:black;" height='300'width='350px'><center></center> 
+
+      </div>
+    </section>
+
+
+
+
+  <center>
+    <section id="about" class="about">
+      <div class="container">
+        <h2> Our Pharmacy</h2>
+
+ <center><hr style="border: 4px solid grey; width: 80%; margin: 20px 0;"></center>
+
+         <li>Our Pharmacy is committed to providing you with the highest quality medicines,expert advice and Compassionate services.</li>
+
+<br>
+
+        
+
+<li>All in one  convenient location,24/7</li>
+<center><hr style="border: 1px solid grey; width: 10%; margin: 20px 0;"></center>
+<center><img src="pharmacy 1.jpg" border="1" style="border-radius: 5px;border-color:black;" height='300'width='350px'><center></center>  
+        
+
+        <p>your trusted source for quality medicines,always in stock</p>
+<center><hr style="border: 1px solid grey; width: 10%; margin: 20px 0;"></center>
+<center><img src="pharmacy.jpg" border="1" style="border-radius: 5px;border-color:black;" height='300'width='350px'><center></center> 
+
+      </div>
+    </section>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Services We Offer</h2>
+      <div class="service-item">
+        <h3>Emergency Care</h3>
+        <p>24/7 emergency services to ensure prompt care in critical situations.</p>
+      </div>
+      <div class="service-item">
+        <h3>Surgery</h3>
+        <p>State-of-the-art surgical procedures performed by experienced professionals.</p>
+      </div>
+      <div class="service-item">
+        <h3>Diagnostic Imaging</h3>
+        <p>Advanced diagnostic imaging services including X-rays, MRIs, and CT scans.</p>
+      </div>
+      
+      
+<h3>General curative </h3>
                 <p>24/7 out patient (OPD) and in patient services.</p>
             </div>
             <div class="service-item">
@@ -169,13 +457,13 @@
 
             <div class="service-item">
                 <h3>Internal Medicine</h3>
-                <p>  </p>
+                <p>hypertension,diabetes,gastritis etc)  </p>
             </div>
 
 
             <div class="service-item">
                 <h3>Urology(Mens Health)</h3>
-                <p>  </p>
+                <p> Mens Health prostate care </p>
             </div>
 
             <div class="service-item">
@@ -186,7 +474,7 @@
 
             <div class="service-item">
                 <h3>Gyanae and Obstetics</h3>
-                <p>  </p>
+                <p>weight,growth monitoring children clinic  </p>
             </div>
 
 
@@ -216,103 +504,88 @@
                 <h3>Opthalmology</h3>
                 <p>  </p>
             </div>
-
-
-
-
-            
-
-
-
-
-
-
-
-
-        </div>
-    </section>
-
-    <div class="gallery-container">
-        <div class="gallery-slides">
-            <div class="gallery-slide">
-                <img src="tinna.jpg" alt="Hospital Image 1" style="width: 300px; height: 200px;">
-            </div>
-            <div class="gallery-slide">
-                <img src="tinna2.jpg" alt="Hospital Image 2" style="width: 300px; height: 200px;">
-            </div>
-            <div class="gallery-slide">
-                <img src="tinn3.jpg" alt="Hospital Image 3" style="width: 300px; height: 200px;">
-            </div>
-        </div>
-        <button class="prev" onclick="showPrevSlide()">❮</button>
-        <button class="next" onclick="showNextSlide()">❯</button>
+      
+      
+      
+      
+      
+      
+      <a href="Services.php.html">🛠️ Services</a>
     </div>
-
-    <script>
-        let currentIndex = 0;
-
-        function showSlide(index) {
-            const slides = document.querySelector('.gallery-slides');
-            const totalSlides = document.querySelectorAll('.gallery-slide').length;
-            if (index >= totalSlides) {
-                currentIndex = 0;
-            } else if (index < 0) {
-                currentIndex = totalSlides - 1;
-            } else {
-                currentIndex = index;
-            }
-            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-        }
-
-        function showNextSlide() {
-            showSlide(currentIndex + 1);
-        }
-
-        function showPrevSlide() {
-            showSlide(currentIndex - 1);
-        }
-
-        setInterval(showNextSlide, 5000);
-   
-
-
-<center>
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or need to schedule an appointment, please reach out to us and we will attend to your needs.</p>
-            <address>
-                <p><strong>Tinna Medical Center</strong></p>
-                <p>Plot Number 122, Kitwe, Buchi, P.o Box 8097</p>
-                <p>Phone: 0966 - 649021</p>
-                <p>--------: 0975 - 507715</p>
-                <p>--------: 0977 - 399820</p>
-                <p>Email: tinnamedicalcentre@yahoo.com</p>
-            </address>
-        </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="gallery-container">
+    <div class="gallery-slides">
+      <div class="gallery-slide">
+        <img src="tinna.jpg" alt="Hospital Image 1" style="width: 500px; height: 200px;">
+      </div>
+      <div class="gallery-slide">
+        <img src="tinna2.jpg" alt="Hospital Image 2" style="width: 500px; height: 200px;">
+      </div>
+      <div class="gallery-slide">
+        <img src="tinna3.jpg" alt="Hospital Image 3" style="width: 500px; height: 200px;">
+      </div>
+    </div>
+    <button class="prev" onclick="showPrevSlide()">❮</button>
+    <button class="next" onclick="showNextSlide()">❯</button>
+  </div>
+  <script>
+    let currentIndex = 0;
+    function showSlide(index) {
+      const slides = document.querySelector('.gallery-slides');
+      const totalSlides = document.querySelectorAll('.gallery-slide').length;
+      if (index >= totalSlides) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = totalSlides - 1;
+      } else {
+        currentIndex = index;
+      }
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+    function showNextSlide() {
+      showSlide(currentIndex + 1);
+    }
+    function showPrevSlide() {
+      showSlide(currentIndex - 1);
+    }
+    setInterval(showNextSlide, 5000);
+  </script>
+  <center>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Our hospital has been serving the community for over 50 years with dedication and care. Our team of highly qualified professionals is committed to providing the best possible care for our patients.</p>
+      </div>
     </section>
-
- </center>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Tinna Medical Center. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        function changeBackgroundColor() {
-            document.body.style.backgroundColor = getRandomColor();
-        }
-    </script>
+  </center>
+  <center>
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need to schedule an appointment, please reach out to us and we will attend to your needs.</p>
+        <address>
+          <p><strong>Tinna Medical Center</strong></p>
+          <p>Plot Number 122, Kitwe, Buchi, P.o Box 8097</p>
+          <p>Phone: 0966 - 649021</p>
+          <p>--------: 0975 - 507715</p>
+          <p>--------: 0977 - 399820</p>
+          <p>Email: tinnamedicalcentre@yahoo.com</p>
+        </address>
+      </div>
+    </section>
+  </center>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tinna Medical Center. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
